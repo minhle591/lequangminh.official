@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- javascipt :)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link REL="shortcut icon" HREF="./assets/img/ntm.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/snow.css">
+    <title>Thông Tin Cá Nhân</title>
+</head>
+
+<body>
+    <!--snow-->
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <!--audio-->
+    <audio autoplay>
+        <source src="./assets/audio/Dance Monkey.mp3" type="audio/mp3">
+    </audio>
+        <!--Hello-->
+        <script>
+Swal.fire(
+'Welcome !',
+'Chào Mừng Bạn Đến Với Website Của Lê Quang Minh.',
+'success'
+)    
+</script>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <!--nav-->
+        <nav class="nav container padd-15">
+            <!--nav logo-->
+            <a href="#" class="nav-logo">
+                <h2><span>Lê </span>
+                    <dm>Quang </dm>
+                    <lm>Minh</lm>
+                </h2>
+            </a>
+            <!--nav menu-->
+            <div class="nav-menu" id="nav-menu">
+                <!--nav list-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!--nav close-->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+            <!--nav btn-->
+            <div class="nav-btns">
+                <!--theme change btn-->
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <!--toggle btn-->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!--intro-->
+                <div class="intro">
+                    <!--avatar img-->
+                    <img class="header__photo-img" src="https://graph.facebook.com/24601345/picture?width=100&height=100&access_token=6628568379|c1e620fa708a1d5696fb991c1bde5662" alt="">
+                    <h2><span>LÊ</span>
+                        <lm>QUANG</lm>
+                        <dm>MINH</dm>
+                    </h2>
+                    <!--info-->
+                    <h1>Welcome To My CV Website</h1>
+                    <!--social icons-->
+                    <ul class="social-icons">
+                        <li><a href="https://www.tiktok.com/@lequangminh2k1" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="https://www.facebook.com/24601345" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://zalo.me/0328774559" target="_blank"><i class="fa-solid fa-message"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/lequanggminhhofficial" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main class="main-content">
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!--avatar img-->
+                        <img src="./assets/img/avtt.png" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!--about text-->
+
+
+                                    <p>- Name : <em> Lê Quang Minh</em><br>
+                                        <br>
+                                        - Birthday : <em>19 - 08 - 2001</em><br>
+                                        <br>
+                                        - City : <em>Hà Nội</em><br>
+                                        <br>
+                                        - Job : <em>Student, Web Design, Dev</em><bR>
+                                        <br>
+                                        - Level : <em>Master</em><br>
+                                        <br>
+                                        - Phone : <em>+84 328774559</em><br>
+                                    </p>
+                                </div>
+                                <div class="skills padd-15" id="skills">
+                                    <div class="row">
+                                        <!--SKILLS item-->
+                                        <div class="skill-item">
+                                            <h4>Python</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 40%; background: red;"></div>
+                                                <div class="skill-percent">40%</div>
+                                            </div>
+                                        </div>
+                                        <!--SKILLS item-->
+                                        <div class="skill-item">
+                                            <h4>PHP</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 24%; background: rgb(0, 255, 34);"></div>
+                                                <div class="skill-percent">24%</div>
+                                            </div>
+                                        </div>
+                                        <!--SKILLS item-->
+                                        <div class="skill-item">
+                                            <h4>CSS</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 0%; background: rgb(255, 174, 0)"></div>
+                                                <div class="skill-percent">0%</div>
+                                            </div>
+                                        </div>
+                                        <!--SKILLS item-->
+                                        <div class="skill-item">
+                                            <h4>JavaScript</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 0%; background: rgb(0, 255, 34)"></div>
+                                                <div class="skill-percent">0%</div>
+                                            </div>
+                                        </div>
+                                        <!--SKILLS item-->
+                                        <div class="skill-item">
+                                            <h4>HTML</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 0%; background: rgb(255, 174, 0)"></div>
+                                                <div class="skill-percent">0%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== Services ===============-->
+        <section class="services section">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">Work</h2>
+                <div class="row">
+                    <!--services item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(21, 230, 21);">
+                            <img src="./assets/img/like.png" alt="">
+                            <h3>Dịch Vụ Về Mạng Xã Hội</h3>
+                            <p>Facebook : Buff Like, Share, Follow, View Story, ...</p>
+                            <p>Tiktok: Buff Tim, Follow, Share, View .</p>
+                            <p>Instagram: Buff Tim, Follow .</p>
+                        </div>
+                    </div>
+                    <!--services item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(0, 36, 241);">
+                            <img src="./assets/img/hs.png" alt="">
+                            <h3>Sinh Viên</h3>
+                            <p>Hiện Đang Là Sinh Viên Tại Trường Học Viện Công Nghệ Thông Tin Bkacad .</p>
+                        </div>
+                    </div>
+                    <!--services item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(255, 0, 0);">
+                            <img src="./assets/img/tool.png" alt="">
+                            <h3>Coder</h3>
+                            <p>Nhận Code Các Bài Tập, Tool, ... Liên Quan Tới Các Ngôn Ngữ : Python</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                    <p>Bạn Thấy Hứng Thú ? <a href="https://zalo.me/0328774559">Click</a> Để Liên Hệ Với Tôi !</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Pricing ===============-->
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">Buy Tools</h2>
+                <div class="row">
+                    <!--prices-->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="./assets/img/face.png" alt="">
+                            <h3 class="plan">Facebook-TikTok</h3>
+                            <p>Liên Hệ Admin Để Được Tư Vấn .</p>
+                            <p>Hỗ Trợ Các Vấn Đề Về Tools</p>
+                            <h3 class="price">50.000<em>đ</em>/ 1<span>Tool</span></h3>
+                            <a href="https://zalo.me/0328774559" class="btn btn-default">Buy</a>
+                        </div>
+                    </div>
+                    <!--prices-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Contact ===============-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!--section-->
+                <h2 class="section-title padd-15">Contact</h2>
+                <div class="row">
+                    <!--contact box-->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <div class="contact-infomation">
+                                <h3 class="contact-subtitle">Call Us For Instant Support</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    +84 328774559
+                                </span>
+                            </div>
+                            <div class="contact-infomation">
+                                <h3 class="contact-subtitle">Write Us By Mail</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    quangminh591@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Copyright By <a href="https://www.facebook.com/24601345">Lê Quang Minh</a></p>
+                    <p>&copy; Anti DDoS By <a href="https://www.facebook.com/24601345">Lê Quang Minh</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!--=============== Theme Customize ===============-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize</h2>
+            <!--font size-->
+            <div class="font-size">
+                <h3>Font size</h3>
+                <div>
+                    <h6>Mm</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Mm</h3>
+                </div>
+            </div>
+            <!---color-->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-4 active"></span>
+                    <span class="color-3"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!--background-->
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <!--=============== JS ===============-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
